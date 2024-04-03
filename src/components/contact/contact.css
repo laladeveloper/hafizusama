@@ -1,0 +1,154 @@
+/* #contact{
+      height: 100vh;
+      width: auto;
+      align-items: center;
+
+} */
+
+.container.contact_container {
+      width: 58%;
+      display: grid;
+      grid-template-columns: 30% 58%;
+      gap: 1.2rem;
+}
+
+.contact_optoins {
+      display: flex;
+      flex-direction: column;
+}
+
+.contact_option {
+      background: var(--color-bg-varient);
+      padding: 1.2rem;
+      border-radius: 1.2rem;
+      text-align: center;
+      transition: var(--transition);
+      /* gap: 1.2rem; */
+      margin-bottom: 1.2rem;
+}
+
+.contact_option:hover {
+      background: transparent;
+      border: 1px solid;
+      /* border-color: var(--color-primary-varient);
+      border-color: rgba(77, 181,255,0.4) ; */
+}
+
+.contact_option-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+}
+
+.contact_option a {
+      display: inline-block;
+      margin-top: 0.7rem;
+      font-size: 0.8rem;
+}
+
+
+/* form  */
+form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+}
+
+input,
+textarea {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      background: transparent;
+      border: 2px solid var(--color-primary-varient);
+      resize: none;
+      color: white;
+}
+
+.formSend {
+      padding: 5% 30% 5% 30%;
+      margin: 0 auto;
+      transition: all ease-in-out .4s;
+}
+
+/* Add this  CSS to your contact.css file */
+
+.thank-you-message {
+      position: relative;
+      padding: 10px;
+      color: #f0f0f0;
+      border-top: 6px solid rgb(102, 226, 248);
+      /* Initial full-width border */
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-collapse: collapse;
+      opacity: 1;
+      animation: thankYouAnimation 4.9s ease-out 2.5s forwards;
+}
+
+@keyframes thankYouAnimation {
+      0% {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border-top-width: 6px;
+            border-width: 100%;
+      }
+
+      50% {
+            border-top-left-radius: 6;
+            border-top-right-radius: 6px;
+            border-width: 50%;
+            /* border-top-width: 0; */
+      }
+
+      100% {
+            border-width: 5%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            /* border-top-width: 0; */
+      }
+}
+
+/* Add this CSS to your contact.css file */
+
+
+
+@media screen and (max-width:1024px) {
+      .container.contact_container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+      }
+
+      .formSend {
+            margin: 0 auto;
+            width: min(100%-20px, 100px);
+            margin-inline: auto;
+            padding-left: 35%;
+            padding-right: 35%;
+      }
+}
+
+@media screen and (max-width:720px) {
+      .container.contact_container {
+            width: 80%;
+      }
+
+      .formSend {
+            margin: 0 auto;
+            width: min(100%-20px, 100px);
+            margin-inline: auto;
+            padding-left: 35%;
+            padding-right: 35%;
+      }
+}
+
+@media screen and (max-width:600px) {
+      .container.contact_container {
+            width: 90%;
+      }
+
+      .formSend {
+            margin: 0 auto;
+            padding-left: 35%;
+            padding-right: 35%;
+      }
+}

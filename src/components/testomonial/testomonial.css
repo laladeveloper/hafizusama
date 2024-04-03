@@ -1,0 +1,68 @@
+.testomonials_container{
+      width: 40%;
+      transition: all ease-in-out .8s;
+}
+
+.dabba{
+      width: 40%;
+      transition: all ease-in-out .9s;
+}
+
+.client_avatar{
+      width: 4rem;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 0.24rem solid var(--color-primary);
+      margin: 0 auto 1rem;
+}
+
+.testomonial{
+      background: var(--color-primary-varient);
+      /* text-align: center; */
+      text-align: justify;
+      padding: 2rem;
+      border-radius: 2rem;
+      user-select: none;
+      margin-top: 1rem;
+      padding-bottom: 4rem;
+}
+
+.client_review{
+      color: var(--color-light);
+      font-weight: 300;
+      display: block;
+      width: 80%;
+      margin: 0.8rem auto 0;
+}
+
+@media screen and (max-width:1024px){
+      .container.testomonials_container{
+            width: 60%;
+      }
+      .dabba{
+            width: 60%;
+      }
+}
+
+@media screen and (max-width:720px){
+      .container.testomonials_container{
+            width: 70%;
+      }
+      .dabba{
+            width: 70%;
+      }
+
+}
+
+@media screen and (max-width:600px) {
+      .container.testomonials_container{
+            width: 90%;
+      }
+      .client_review{
+            width: 90%;
+      }
+      .dabba{
+            width: 90%;
+      }
+}
